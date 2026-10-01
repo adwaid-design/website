@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MONO — Phones & Gadgets</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            MONO<span>.</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn" id="wishlistBtn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-box" id="searchBox">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search phones, headphones, watches..."
+        >
+
+        <button id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">THE FUTURE OF TECH</p>
+
+            <h1>
+                Technology.
+                <br>
+                <span>Simply better.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover premium smartphones, gadgets and accessories
+                designed for modern living.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn primary">
+                    Shop Collection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#categories" class="btn secondary">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-product">
+
+            <div class="circle"></div>
+
+            <div class="phone-display">
+                <div class="phone-camera"></div>
+                <div class="phone-screen">
+                    <div class="screen-time">09:41</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">EXPLORE</p>
+                <h2>Shop by category</h2>
+            </div>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Smartphones</h3>
+                <p>Latest devices</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-headphones"></i>
+                <h3>Audio</h3>
+                <p>Premium sound</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Wearables</h3>
+                <p>Smart lifestyle</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-plug"></i>
+                <h3>Accessories</h3>
+                <p>Everyday essentials</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">OUR COLLECTION</p>
+                <h2>Featured products</h2>
+            </div>
+
+            <button class="view-all">
+                View all
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- PRODUCT 1 -->
+
+            <article
+                class="product-card"
+                data-name="Mono X1 Smartphone"
+                data-category="smartphones"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge">NEW</span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="product-phone phone-one">
+                        <div class="camera-module"></div>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">SMARTPHONE</p>
+
+                    <h3>Mono X1</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹69,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono X1"
+                            data-price="69999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article
+                class="product-card"
+                data-name="Mono Buds Pro"
+                data-category="audio"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge dark">BESTSELLER</span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="earbuds">
+
+                        <div class="bud left"></div>
+                        <div class="bud right"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">AUDIO</p>
+
+                    <h3>Mono Buds Pro</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹9,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono Buds Pro"
+                            data-price="9999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article
+                class="product-card"
+                data-name="Mono Watch S"
+                data-category="wearables"
+            >
+
+                <div class="product-image">
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="smartwatch">
+
+                        <div class="watch-screen">
+                            09:41
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">WEARABLE</p>
+
+                    <h3>Mono Watch S</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹14,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono Watch S"
+                            data-price="14999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article
+                class="product-card"
+                data-name="Mono Max Smartphone"
+                data-category="smartphones"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge">NEW</span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="product-phone phone-two">
+                        <div class="camera-module"></div>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">SMARTPHONE</p>
+
+                    <h3>Mono Max</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹89,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono Max"
+                            data-price="89999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article
+                class="product-card"
+                data-name="Mono Headphones"
+                data-category="audio"
+            >
+
+                <div class="product-image">
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="headphones">
+
+                        <div class="earcup left"></div>
+                        <div class="earcup right"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">AUDIO</p>
+
+                    <h3>Mono Headphones</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹12,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono Headphones"
+                            data-price="12999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article
+                class="product-card"
+                data-name="Mono Power Hub"
+                data-category="accessories"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge dark">POPULAR</span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="power-hub">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">ACCESSORY</p>
+
+                    <h3>Mono Power Hub</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>₹3,999</strong>
+
+                        <button
+                            class="add-cart"
+                            data-product="Mono Power Hub"
+                            data-price="3999"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO ================= -->
+
+    <section class="promo">
+
+        <div>
+
+            <p class="small-title">MONO X1</p>
+
+            <h2>
+                Less noise.
+                <br>
+                More technology.
+            </h2>
+
+            <p>
+                Experience our latest smartphone with a clean
+                design and powerful performance.
+            </p>
+
+            <a href="#products" class="btn white-btn">
+                Discover Mono X1
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="promo-phone">
+
+            <div class="promo-screen">
+                09:41
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="about">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    MONO<span>.</span>
+                </div>
+
+                <p>
+                    Modern technology.
+                    <br>
+                    Simply designed.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Shop</h4>
+
+                <a href="#products">Smartphones</a>
+                <a href="#products">Audio</a>
+                <a href="#products">Wearables</a>
+                <a href="#products">Accessories</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow</h4>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    X / Twitter
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                    YouTube
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MONO. All rights reserved.</p>
+
+            <p>Made for modern living.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART ================= -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <div class="cart-header">
+
+                <h2>Your Cart</h2>
+
+                <button id="closeCart">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+            <div class="cart-items" id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="total">
+                    <span>Total</span>
+                    <strong id="cartTotal">₹0</strong>
+                </div>
+
+                <button class="checkout">
+                    Checkout
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
