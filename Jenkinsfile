@@ -22,7 +22,7 @@ pipeline{
             deleteDir()
                unstash 'website'
                sh '''
-                  cp -r website/* /var/www/html
+                  sudo  cp -r website/* /var/www/html
                   '''
                   
         }
