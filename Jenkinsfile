@@ -14,9 +14,9 @@ pipeline{
            stash name: 'website' , includes:'website/**'
     }
      }
-        stage('deploy')
+        stage('deploy'){
         agent{
-            label 'deploy-agent'
+            label 'deploy-pipeline'
         }
         steps{
             deleteDir()
@@ -25,7 +25,7 @@ pipeline{
                   cp -r website/* /var/www/html
                   '''
                   
-            
+        }
         }
     }  
 }
