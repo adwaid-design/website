@@ -3,7 +3,7 @@ pipeline{
     stages{
      stage('build'){
     agent{
-        label 'bulid-pipeline'
+        label 'build-pipeline'
     }
     steps{
         deleteDir()
